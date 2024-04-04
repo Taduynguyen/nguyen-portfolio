@@ -140,7 +140,7 @@ export default function ContentList({
                 key={index}
                 className="list-item"
                 onMouseEnter={() => onMouseEnter(index)}
-                ref={(el: HTMLLIElement | null) => (itemsRef.current[index] = el)}
+                ref={(el) => (itemsRef.current[index] = el)}
               >
                 <Link
                   href={item.uid !== "vneats" ? urlPrefix + "/" + item.uid : "https://vneats-client.onrender.com/"}
